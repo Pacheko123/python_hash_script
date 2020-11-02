@@ -2,7 +2,8 @@ import sys
 import hashlib
 path = raw_input("Enter the path of the file to encrypt\n")
 confirm = raw_input("The file  is going to be encrypted, are you sure?(NO/YES)")
-if(confirm=="YES") or (confirm=="yes"):
+confirm = confirm.lower()
+if(confirm=="yes"):
    with open(path,'r') as encrypt:
         content = encrypt.read()
         print(content)
