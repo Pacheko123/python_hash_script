@@ -1,5 +1,6 @@
 import sys
 import hashlib
+key= raw_input("Enter your hashing key")
 path = raw_input("Enter the path of the file to encrypt\n")
 confirm = raw_input("The file  is going to be encrypted, are you sure?(NO/YES)")
 confirm = confirm.lower()
